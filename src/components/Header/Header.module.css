@@ -1,0 +1,101 @@
+.test {
+  background-color: aquamarine;
+}
+
+
+.header {
+  background-color: #757D5A;
+}
+
+.header__inner {
+  width: 100%;
+  max-width: 1440px;
+  padding: 10px 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.header__start {
+  display: flex;
+  align-self: center;
+  justify-self: flex-start;
+  width: 100%;
+}
+
+.header__logo-container {
+  justify-self: center;
+}
+
+.header__end {
+  display: flex;
+  align-self: center;
+  justify-self: flex-end;
+}
+
+.header__buttons-container {
+  display: flex;
+  gap: 20px;
+}
+
+.header__text-button {
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  cursor: pointer;
+  position: relative;
+}
+
+.header__text-button::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff;
+  transition: transform 0.3s ease;
+  transform-origin:center;
+  transform: scale(0)
+}
+
+.header__text-button:hover::after {
+  transform: scale(1)
+}
+
+.header__buttons-container--desktop {
+  display: none;
+  width: 100%;
+  max-width: 335px;
+}
+
+.header__button-appointment {
+  display: none;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 7px 30px;
+  border: 1px solid white;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header__button-appointment:hover {
+  background-color: #fff;
+  color: #4c523c;
+}
+
+@media screen and (min-width:820px) {
+  .header__burger, .header__buttons-container {
+    display: none;
+  }
+
+  .header__buttons-container--desktop {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .header__button-appointment {
+    display: block;
+  }
+}
