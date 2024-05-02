@@ -81,7 +81,7 @@ export function Header() {
         </div>
 
         <button className={styles['header__button-appointment']}>
-          Записатись
+          Записатись на грумінг
         </button>
       </div>
     </div>
