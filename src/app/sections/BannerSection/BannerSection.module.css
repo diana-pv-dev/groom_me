@@ -1,0 +1,46 @@
+.banner {
+  position: relative;
+  width: 100%;
+}
+
+.banner__content-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  aspect-ratio: 70 / 45;
+  margin: auto;
+  overflow: hidden;
+  user-select: none;
+}
+
+.banner__image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 700px;
+  aspect-ratio: 70 / 45;
+  margin: auto;
+  overflow: hidden;
+  user-select: none;
+}
+
+.banner__slider-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.banner__slider-button {
+  background-color: #fff;
+  position: absolute;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  left: calc(50% - 10px);
+  top: calc(50% - 10px);
+}

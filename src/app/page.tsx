@@ -4,6 +4,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import { HeroBanner } from "./sections/HeroBanner/HeroBanner";
 import React from "react";
+import { BannerSection } from "./sections/BannerSection/BannerSection";
 
 export const metadata: Metadata = {
   title: "Groom.me",
@@ -14,6 +15,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <HeroBanner />
+      <BannerSection />
     </main>
   );
 }
