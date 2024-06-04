@@ -5,6 +5,7 @@ import styles from "./page.module.css";
 import { HeroBanner } from "./sections/HeroBanner/HeroBanner";
 import React from "react";
 import { BannerSection } from "./sections/BannerSection/BannerSection";
+import { ReviewsSection } from "./sections/ReviewsSection/ReviewsSection";
 
 export const metadata: Metadata = {
   title: "Groom.me",
@@ -16,6 +17,7 @@ export default function Home() {
     <main className={styles.main}>
       <HeroBanner />
       <BannerSection />
+      <ReviewsSection />
     </main>
   );
 }
